@@ -1,4 +1,4 @@
-resource "aws_vpc_peering" "peering" {
+resource "aws_vpc_peering_connection" "peering" {
 
     count = var.is_peering_require == true ? 1 : 0
     vpc_id = aws_vpc.vpc.id
