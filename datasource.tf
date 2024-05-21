@@ -13,7 +13,7 @@ data "aws_route_table"  "main"{
    vpc_id = "default"
    filter {
       name = "association.main"
-      value = true
+      values = true
    }
 
 }
