@@ -26,7 +26,7 @@ variable "common_tags" {
 variable "cidr_block_public" {
     type = list(string)
     validation {
-        condition = length(cidr_block_public) == 2
+        condition = length(var.cidr_block_public) == 2
         error_message = "Please Provide Only Two Public cidr Blocks"
     }
 }
