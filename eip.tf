@@ -1,7 +1,5 @@
-resource "aws_eip" "eip_east1a" {
+resource "aws_eip" "eip" {
+    count = length(local.az)
     domain = "vpc"
 }
 
-resource "aws_eip" "eip_east1b" {
-    domain = "vpc"
-}
