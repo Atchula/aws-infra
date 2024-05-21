@@ -32,6 +32,11 @@ inputs :
 * Name of resource after create would be "Name-Environment"
 * Tags Would be  Name,Project,Environmant,CreatedDate -- "current date"
 
+########## SUBNETS ##########
+
+1) cidr_block_public (Mandatory) - This input to create public subntes in two regions "us-east-1a","us-east-1b",type is list of cidr blocks,user must include only two cidr blocks.
+** subnet names would  be  ""Name-Environment-public"
+
 
 
 

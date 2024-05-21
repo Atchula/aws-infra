@@ -1,3 +1,5 @@
+## VPC,IG Variables
+
 variable "cidr_block" {
     type = string
     default = "10.0.0.0/16"
@@ -17,4 +19,14 @@ variable "common_tags" {
 
     }
 
+}
+
+### SUBNETS Variables #####
+
+variable "cidr_block_public" {
+    type = list(string)
+    validation {
+        condition = length(cidr_block_public) == 2
+        error_message = "Please Provide Only Two Public cidr Blocks"
+    }
 }
