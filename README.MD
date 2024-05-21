@@ -43,6 +43,10 @@ inputs :
 3) cidr_block_db (Mandatory) - This input to create public subntes in two regions "us-east-1a","us-east-1b",type is list of cidr blocks,user must include only two cidr blocks.
 ** subnet names would  be  ""Name-Environment-db"
 
+############# ROUTE TABLES ###########
+
+** route table names would  be  ""Name-Environment-private/public/db"
+
 
 
 
