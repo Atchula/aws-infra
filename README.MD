@@ -22,5 +22,17 @@ inputs :
 * Name of resource after create would be "Name-Environment"
 * Tags Would be  Name,Project,Environmant,CreatedDate -- "current date"
 
+##### IG ##########
+
+1) common_tags (optional) - This input is optional,type is map,default value is 
+
+{ Project = "demo" 
+  Environment = "dev"
+  Name = "demo" }
+* Name of resource after create would be "Name-Environment"
+* Tags Would be  Name,Project,Environmant,CreatedDate -- "current date"
+
+
+
 
 
