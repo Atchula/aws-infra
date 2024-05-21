@@ -37,6 +37,12 @@ inputs :
 1) cidr_block_public (Mandatory) - This input to create public subntes in two regions "us-east-1a","us-east-1b",type is list of cidr blocks,user must include only two cidr blocks.
 ** subnet names would  be  ""Name-Environment-public"
 
+2) cidr_block_private (Mandatory) - This input to create public subntes in two regions "us-east-1a","us-east-1b",type is list of cidr blocks,user must include only two cidr blocks.
+** subnet names would  be  ""Name-Environment-private"
+
+3) cidr_block_db (Mandatory) - This input to create public subntes in two regions "us-east-1a","us-east-1b",type is list of cidr blocks,user must include only two cidr blocks.
+** subnet names would  be  ""Name-Environment-db"
+
 
 
 

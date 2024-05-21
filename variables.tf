@@ -30,3 +30,19 @@ variable "cidr_block_public" {
         error_message = "Please Provide Only Two Public cidr Blocks"
     }
 }
+
+variable "cidr_block_private" {
+    type = list(string)
+    validation {
+        condition = length(var.cidr_block_private) == 2
+        error_message = "Please Provide Only Two private cidr Blocks"
+    }
+}
+
+variable "cidr_block_db" {
+    type = list(string)
+    validation {
+        condition = length(var.cidr_block_db) == 2
+        error_message = "Please Provide Only Two db cidr Blocks"
+    }
+}
