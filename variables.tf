@@ -46,3 +46,14 @@ variable "cidr_block_db" {
         error_message = "Please Provide Only Two db cidr Blocks"
     }
 }
+
+#### PEERING #####
+
+variable "is_peering_require" {
+    type = bool
+    default = false
+}
+variable "target_vpc" {
+    type = string
+    default = ""
+}
