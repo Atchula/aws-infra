@@ -1,4 +1,4 @@
 locals {
-    name = "${var.Name}-${var.Environment}"
+    name = "${var.common_tags.Name}-${var.common_tags.Environment}"
     date = timestamp()
 }
