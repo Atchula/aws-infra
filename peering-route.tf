@@ -7,7 +7,7 @@ resource "aws_route"  "route_peering" {
 
 resource "aws_route"  "route_peering1" {
     count = var.is_peering_require == true ? 1 : 0
-    route_table_id = data.aws_route_table.main.id
+    route_table_id = data.aws_route_table.def.id
     destination_cidr_block = aws_vpc.vpc.cidr_block
     vpc_peering_connection_id = aws_vpc_peering_connection.peering[0].id
 }
